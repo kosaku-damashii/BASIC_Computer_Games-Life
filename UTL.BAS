@@ -51,7 +51,7 @@ VAR I,R
 I$=ARGS$(1)
 I$=I$+"? "
 PRINT I$;
-R#=FLOAT#(ASC(INPUT$())-ASC("0"))
+R#=FLOAT#(VAL(INPUT$()))
 RETURN R#
 
 METHOD STOP
